@@ -20,4 +20,8 @@
 Runs a command inside a container, it may be running a specific item, launching a web service
 or many different possibilities.
 
+Example: ``docker run hello-world``
 
+### Listing Docker Machines
+
+``docker ps`` or ``docker ps -a`` will show the open containers and what is running.
