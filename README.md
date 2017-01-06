@@ -31,6 +31,15 @@ or many different possibilities.
 
 Example: ``docker run hello-world``
 
+
+### Pull
+
+If you want to pull an image down
+
+```
+docker pull namehere:version
+```
+
 #### Interacting with Containers
 
 You can interact using the ``-i`` flag, but to open a ``tty`` then you can do something like:
@@ -43,3 +52,34 @@ docker run -it container_here sh
 
 ``docker ps`` or ``docker ps -a`` will show the open containers and what is running.
 
+### Download and run packages on the fly
+
+```
+docker run username/docker-image
+```
+
+Will run the image from the docker hub.
+
+### Checking ports
+
+To check the ports that are being used by a container:
+
+```
+docker port [machine-name-here]
+```
+
+### Docker Images
+
+List the images that have been pulled:
+
+```
+docker iamges
+```
+
+### Searching Images
+
+To search for images on the hub, you can search from command line:
+
+```
+docker search [...]
+```
